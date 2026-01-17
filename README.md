@@ -5,6 +5,7 @@
     <title>B-Pro Service – Nettoyage professionnel à Bruxelles & Schaerbeek</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="B-Pro Service – Nettoyage professionnel de bureaux, bâtiments, communs et fins de chantier à Bruxelles et Schaerbeek. Devis rapide et service soigné.">
+    
     @media (max-width: 480px) {
     .container {
         padding: 0 10px;
