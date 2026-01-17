@@ -942,32 +942,47 @@
                 </div>
 
                 <div>
-                    <!-- Formulaire simple (à connecter plus tard si tu veux l’envoyer vers ton mail via un script) -->
-                    <form>
-                        <div>
-                            <label for="nom">Nom / Société</label>
-                            <input type="text" id="nom" name="nom" placeholder="Votre nom ou celui de la société">
-                        </div>
-                        <div>
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="votre.email@example.com">
-                        </div>
-                        <div>
-                            <label for="tel">Téléphone</label>
-                            <input type="tel" id="tel" name="tel" placeholder="Votre numéro de téléphone">
-                        </div>
-                        <div>
-                            <label for="locaux">Type de locaux</label>
-                            <input type="text" id="locaux" name="locaux" placeholder="Bureaux, immeuble, fin de chantier…">
-                        </div>
-                        <div>
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Surface approximative, fréquence souhaitée, contraintes horaires…"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-primary" onclick="alert('Formulaire visuel uniquement pour l’instant. Vous pouvez nous contacter par téléphone ou e-mail.');">
-                            Envoyer ma demande
-                        </button>
-                    </form>
+                    form action="https://formspree.io/f/xykkkbjv" method="POST">
+
+    <!-- Anti-spam -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <!-- Sujet de l’e-mail -->
+    <input type="hidden" name="_subject" value="Nouvelle demande de devis – B-Pro Service">
+
+    <div>
+        <label for="nom">Nom / Société</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom ou celui de la société" required>
+    </div>
+
+    <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
+    </div>
+
+    <div>
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="telephone" placeholder="Votre numéro de téléphone">
+    </div>
+
+    <div>
+        <label for="locaux">Type de locaux</label>
+        <input type="text" id="locaux" name="locaux" placeholder="Bureaux, immeuble, fin de chantier…">
+    </div>
+
+    <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Surface approximative, fréquence souhaitée, contraintes horaires…" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Envoyer ma demande
+    </button>
+
+    <p style="font-size:0.8rem; color:#666; margin-top:6px;">
+        Après l’envoi, vous recevrez un e-mail de confirmation.
+    </p>
+</form>
                     <p style="font-size:0.8rem; color:var(--text-muted); margin-top:6px;">
                         (Formulaire en mode démonstration – pour un envoi automatique vers votre e-mail,
                         une configuration supplémentaire sera nécessaire.)
@@ -1005,4 +1020,5 @@
 
 </body>
 </html>
+
 
