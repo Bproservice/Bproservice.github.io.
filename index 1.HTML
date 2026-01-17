@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>B-Pro Service – Nettoyage professionnel à Bruxelles & Schaerbeek</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="B-Pro Service – Nettoyage professionnel de bureaux, bâtiments, communs et fins de chantier à Bruxelles et Schaerbeek. Devis rapide et service soigné.">
+
     <style>
         :root {
             --primary: #1c7ed6;
@@ -571,6 +573,26 @@
                 font-size: 1.9rem;
             }
         }
+
+        /* Mobile encore plus confortable */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -942,51 +964,60 @@
                 </div>
 
                 <div>
-                    form action="https://formspree.io/f/xykkkbjv" method="POST">
+                    <!-- Message de confirmation (caché au départ) -->
+                    <div id="merci" style="display:none; margin-bottom:14px; padding:12px; border:1px solid #dde1ea; border-radius:12px; background:#ffffff;">
+                        <strong style="color:#2f9e44;">✅ Merci !</strong>
+                        <div style="color:#666; margin-top:6px;">
+                            Votre demande de devis a bien été envoyée.<br>
+                            Nous vous recontactons dans les plus brefs délais.
+                        </div>
+                    </div>
 
-    <!-- Anti-spam -->
-    <input type="text" name="_gotcha" style="display:none">
+                    <!-- Formulaire connecté à Formspree -->
+                    <form id="contact-form" action="https://formspree.io/f/xykkkbjv" method="POST">
+                        <!-- Anti-spam -->
+                        <input type="text" name="_gotcha" style="display:none">
 
-    <!-- Sujet de l’e-mail -->
-    <input type="hidden" name="_subject" value="Nouvelle demande de devis – B-Pro Service">
+                        <!-- Sujet de l’e-mail -->
+                        <input type="hidden" name="_subject" value="Nouvelle demande de devis – B-Pro Service">
 
-    <div>
-        <label for="nom">Nom / Société</label>
-        <input type="text" id="nom" name="nom" placeholder="Votre nom ou celui de la société" required>
-    </div>
+                        <!-- REDIRECTION après envoi (À ADAPTER AVEC TON URL DE SITE) -->
+                        <!-- Remplace VOTRE-URL-DE-SITE par l'adresse complète de ton site en ligne -->
+                        <input type="hidden" name="_next" value="https://bproservice.github.io/Bproservice.github.io/#merci">
 
-    <div>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
-    </div>
+                        <div>
+                            <label for="nom">Nom / Société</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom ou celui de la société" required>
+                        </div>
 
-    <div>
-        <label for="tel">Téléphone</label>
-        <input type="tel" id="tel" name="telephone" placeholder="Votre numéro de téléphone">
-    </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
+                        </div>
 
-    <div>
-        <label for="locaux">Type de locaux</label>
-        <input type="text" id="locaux" name="locaux" placeholder="Bureaux, immeuble, fin de chantier…">
-    </div>
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input type="tel" id="tel" name="telephone" placeholder="Votre numéro de téléphone">
+                        </div>
 
-    <div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Surface approximative, fréquence souhaitée, contraintes horaires…" required></textarea>
-    </div>
+                        <div>
+                            <label for="locaux">Type de locaux</label>
+                            <input type="text" id="locaux" name="locaux" placeholder="Bureaux, immeuble, fin de chantier…">
+                        </div>
 
-    <button type="submit" class="btn btn-primary">
-        Envoyer ma demande
-    </button>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Surface approximative, fréquence souhaitée, contraintes horaires…" required></textarea>
+                        </div>
 
-    <p style="font-size:0.8rem; color:#666; margin-top:6px;">
-        Après l’envoi, vous recevrez un e-mail de confirmation.
-    </p>
-</form>
-                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:6px;">
-                        (Formulaire en mode démonstration – pour un envoi automatique vers votre e-mail,
-                        une configuration supplémentaire sera nécessaire.)
-                    </p>
+                        <button type="submit" class="btn btn-primary">
+                            Envoyer ma demande
+                        </button>
+
+                        <p style="font-size:0.8rem; color:#666; margin-top:6px;">
+                            Après l’envoi, vous recevrez une confirmation sur cette page.
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1016,9 +1047,16 @@
             }
         });
     });
+
+    // Affichage du message "Merci" après redirection (#merci dans l'URL)
+    if (window.location.hash === "#merci") {
+        const merci = document.getElementById("merci");
+        if (merci) {
+            merci.style.display = "block";
+            merci.scrollIntoView({ behavior: "smooth" });
+        }
+    }
 </script>
 
 </body>
 </html>
-
-
