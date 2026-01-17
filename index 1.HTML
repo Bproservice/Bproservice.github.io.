@@ -24,9 +24,7 @@
             padding: 0;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -35,10 +33,7 @@
             line-height: 1.6;
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+        a { text-decoration: none; color: inherit; }
 
         .container {
             max-width: 1100px;
@@ -63,11 +58,7 @@
             padding: 10px 0;
         }
 
-        .logo-block {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        .logo-block { display: flex; align-items: center; gap: 10px; }
 
         .logo-icon {
             width: 34px;
@@ -82,15 +73,8 @@
             font-size: 0.9rem;
         }
 
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            font-size: 0.95rem;
-        }
-
-        .logo-text span:first-child {
-            font-weight: 700;
-        }
+        .logo-text { display: flex; flex-direction: column; font-size: 0.95rem; }
+        .logo-text span:first-child { font-weight: 700; }
 
         nav ul {
             display: flex;
@@ -99,19 +83,10 @@
             font-size: 0.9rem;
         }
 
-        nav a {
-            padding: 4px 0;
-            border-bottom: 2px solid transparent;
-        }
+        nav a { padding: 4px 0; border-bottom: 2px solid transparent; }
+        nav a:hover { border-color: var(--primary); }
 
-        nav a:hover {
-            border-color: var(--primary);
-        }
-
-        .nav-actions {
-            display: flex;
-            gap: 8px;
-        }
+        .nav-actions { display: flex; gap: 8px; }
 
         .btn {
             display: inline-flex;
@@ -127,24 +102,15 @@
             white-space: nowrap;
         }
 
-        .btn-primary {
-            background: var(--primary);
-            color: #fff;
-        }
-
-        .btn-primary:hover {
-            background: var(--primary-dark);
-        }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { background: var(--primary-dark); }
 
         .btn-ghost {
             background: transparent;
             border: 1px solid var(--border);
             color: var(--text-main);
         }
-
-        .btn-ghost:hover {
-            border-color: var(--primary);
-        }
+        .btn-ghost:hover { border-color: var(--primary); }
 
         /* HERO */
         .hero {
@@ -171,9 +137,7 @@
             margin-bottom: 10px;
         }
 
-        .hero-badge span {
-            font-size: 1rem;
-        }
+        .hero-badge span { font-size: 1rem; }
 
         .hero h1 {
             font-size: 2.2rem;
@@ -203,17 +167,8 @@
             color: var(--text-muted);
         }
 
-        .hero-list span {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .hero-list span::before {
-            content: "✓";
-            color: var(--accent);
-            font-size: 0.95rem;
-        }
+        .hero-list span { display: flex; align-items: center; gap: 6px; }
+        .hero-list span::before { content: "✓"; color: var(--accent); font-size: 0.95rem; }
 
         .hero-visual {
             background: #ffffff;
@@ -234,13 +189,8 @@
             align-items: center;
         }
 
-        .hero-emoji {
-            font-size: 2.4rem;
-        }
-
-        .hero-illu-text {
-            font-size: 0.9rem;
-        }
+        .hero-emoji { font-size: 2.4rem; }
+        .hero-illu-text { font-size: 0.9rem; }
 
         .hero-stats {
             display: flex;
@@ -250,35 +200,15 @@
             color: var(--text-muted);
         }
 
-        .hero-stats div {
-            flex: 1;
-        }
-
-        .hero-stats strong {
-            display: block;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-        }
+        .hero-stats div { flex: 1; }
+        .hero-stats strong { display: block; font-size: 1.1rem; color: var(--primary-dark); }
 
         /* SECTIONS */
-        section {
-            padding: 40px 0;
-        }
+        section { padding: 40px 0; }
 
-        .section-header {
-            margin-bottom: 18px;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 4px;
-        }
-
-        .section-subtitle {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            max-width: 540px;
-        }
+        .section-header { margin-bottom: 18px; }
+        .section-title { font-size: 1.5rem; margin-bottom: 4px; }
+        .section-subtitle { font-size: 0.95rem; color: var(--text-muted); max-width: 540px; }
 
         /* CARDS */
         .cards {
@@ -296,183 +226,50 @@
             transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
 
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
-        }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12); }
+        .card-icon { font-size: 1.7rem; margin-bottom: 6px; }
+        .card h3 { font-size: 1.02rem; margin-bottom: 4px; }
+        .card p { font-size: 0.9rem; color: var(--text-muted); }
 
-        .card-icon {
-            font-size: 1.7rem;
-            margin-bottom: 6px;
-        }
-
-        .card h3 {
-            font-size: 1.02rem;
-            margin-bottom: 4px;
-        }
-
-        .card p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .chip-row {
-            margin-top: 8px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 4px;
-        }
-
-        .chip {
-            font-size: 0.75rem;
-            padding: 3px 8px;
-            border-radius: 999px;
-            background: #f1f3f5;
-            color: var(--text-muted);
-        }
+        .chip-row { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+        .chip { font-size: 0.75rem; padding: 3px 8px; border-radius: 999px; background: #f1f3f5; color: var(--text-muted); }
 
         /* POUR QUI */
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 22px;
-        }
+        .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 
-        .list {
-            list-style: none;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .list li {
-            position: relative;
-            padding-left: 18px;
-            margin-bottom: 6px;
-        }
-
-        .list li::before {
-            content: "•";
-            position: absolute;
-            left: 5px;
-            top: 0;
-            color: var(--primary);
-        }
+        .list { list-style: none; font-size: 0.9rem; color: var(--text-muted); }
+        .list li { position: relative; padding-left: 18px; margin-bottom: 6px; }
+        .list li::before { content: "•"; position: absolute; left: 5px; top: 0; color: var(--primary); }
 
         /* PROCESS */
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 14px;
-            margin-top: 16px;
-        }
-
-        .step {
-            background: #f5f7fb;
-            border-radius: 14px;
-            padding: 12px;
-            font-size: 0.85rem;
-        }
-
+        .steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
+        .step { background: #f5f7fb; border-radius: 14px; padding: 12px; font-size: 0.85rem; }
         .step-number {
-            width: 24px;
-            height: 24px;
-            border-radius: 999px;
-            background: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--primary);
+            width: 24px; height: 24px; border-radius: 999px; background: #ffffff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.85rem; font-weight: 600; color: var(--primary);
             margin-bottom: 4px;
         }
+        .step h3 { font-size: 0.9rem; margin-bottom: 3px; }
 
-        .step h3 {
-            font-size: 0.9rem;
-            margin-bottom: 3px;
-        }
-
-        .pill-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 12px;
-        }
-
-        .pill {
-            font-size: 0.8rem;
-            padding: 6px 10px;
-            border-radius: 999px;
-            border: 1px solid var(--border);
-            background: #fff;
-            color: var(--text-muted);
-        }
+        .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .pill { font-size: 0.8rem; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); background: #fff; color: var(--text-muted); }
 
         /* TEMOIGNAGES */
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 16px;
-            margin-top: 12px;
-        }
-
-        .testimonial {
-            background: #ffffff;
-            border-radius: 14px;
-            padding: 14px;
-            border: 1px solid var(--border);
-            font-size: 0.88rem;
-            color: var(--text-muted);
-        }
-
-        .testimonial strong {
-            display: block;
-            margin-top: 8px;
-            color: var(--text-main);
-        }
+        .testimonials { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 12px; }
+        .testimonial { background: #ffffff; border-radius: 14px; padding: 14px; border: 1px solid var(--border); font-size: 0.88rem; color: var(--text-muted); }
+        .testimonial strong { display: block; margin-top: 8px; color: var(--text-main); }
 
         /* FAQ (INTERACTIF) */
-        .faq {
-            margin-top: 18px;
-        }
-
-        .faq-item {
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            padding: 10px 12px;
-            margin-bottom: 8px;
-            background: #ffffff;
-            cursor: pointer;
-        }
-
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.92rem;
-            font-weight: 500;
-        }
-
-        .faq-toggle {
-            font-size: 1.2rem;
-            color: var(--primary);
-        }
-
-        .faq-answer {
-            margin-top: 6px;
-            font-size: 0.86rem;
-            color: var(--text-muted);
-            display: none;
-        }
-
-        .faq-item.open .faq-answer {
-            display: block;
-        }
+        .faq { margin-top: 18px; }
+        .faq-item { border-radius: 12px; border: 1px solid var(--border); padding: 10px 12px; margin-bottom: 8px; background: #ffffff; cursor: pointer; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; font-size: 0.92rem; font-weight: 500; }
+        .faq-toggle { font-size: 1.2rem; color: var(--primary); }
+        .faq-answer { margin-top: 6px; font-size: 0.86rem; color: var(--text-muted); display: none; }
+        .faq-item.open .faq-answer { display: block; }
 
         /* CONTACT */
-        .contact-section {
-            background: var(--bg);
-        }
+        .contact-section { background: var(--bg); }
 
         .contact-grid {
             display: grid;
@@ -481,14 +278,8 @@
             margin-top: 16px;
         }
 
-        .contact-block {
-            font-size: 0.92rem;
-            color: var(--text-main);
-        }
-
-        .contact-block p {
-            margin-bottom: 6px;
-        }
+        .contact-block { font-size: 0.92rem; color: var(--text-main); }
+        .contact-block p { margin-bottom: 6px; }
 
         .contact-highlight {
             margin-top: 10px;
@@ -500,15 +291,8 @@
             color: var(--text-muted);
         }
 
-        form {
-            display: grid;
-            gap: 8px;
-        }
-
-        label {
-            font-size: 0.82rem;
-            font-weight: 500;
-        }
+        form { display: grid; gap: 8px; }
+        label { font-size: 0.82rem; font-weight: 500; }
 
         input, textarea {
             width: 100%;
@@ -519,10 +303,7 @@
             font-family: inherit;
         }
 
-        textarea {
-            resize: vertical;
-            min-height: 80px;
-        }
+        textarea { resize: vertical; min-height: 80px; }
 
         /* FOOTER */
         footer {
@@ -542,59 +323,32 @@
         /* RESPONSIVE */
         @media (max-width: 900px) {
             .hero-grid,
-            .contact-grid {
-                grid-template-columns: minmax(0, 1fr);
-            }
+            .contact-grid { grid-template-columns: minmax(0, 1fr); }
         }
 
         @media (max-width: 800px) {
-            nav ul {
-                display: none;
-            }
-            .cards {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            .steps {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            .testimonials {
-                grid-template-columns: minmax(0, 1fr);
-            }
+            nav ul { display: none; }
+            .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .testimonials { grid-template-columns: minmax(0, 1fr); }
         }
 
         @media (max-width: 600px) {
-            .cards {
-                grid-template-columns: minmax(0, 1fr);
-            }
-            .steps {
-                grid-template-columns: minmax(0, 1fr);
-            }
-            .hero h1 {
-                font-size: 1.9rem;
-            }
+            .cards { grid-template-columns: minmax(0, 1fr); }
+            .steps { grid-template-columns: minmax(0, 1fr); }
+            .hero h1 { font-size: 1.9rem; }
         }
 
         /* Mobile encore plus confortable */
         @media (max-width: 480px) {
-            .container {
-                padding: 0 10px;
-            }
-
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .hero-actions {
-                flex-direction: column;
-            }
-
-            .section-title {
-                font-size: 1.3rem;
-            }
+            .container { padding: 0 10px; }
+            .btn { width: 100%; justify-content: center; }
+            .hero-actions { flex-direction: column; }
+            .section-title { font-size: 1.3rem; }
         }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -776,154 +530,6 @@
         </div>
     </section>
 
-    <!-- POUR QUI -->
-    <section id="secteurs">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Pour qui travaillons-nous ?</h2>
-                <p class="section-subtitle">
-                    B-Pro Service s’adresse principalement aux professionnels
-                    à Bruxelles, Schaerbeek et les communes voisines.
-                </p>
-            </div>
-
-            <div class="grid-2">
-                <div>
-                    <h3>Entreprises & bureaux</h3>
-                    <ul class="list">
-                        <li>PME, indépendants, cabinets, coworking</li>
-                        <li>Horaires adaptés : tôt le matin, journée ou soirée</li>
-                        <li>Contrats réguliers (journalier, hebdomadaire, mensuel)</li>
-                    </ul>
-
-                    <h3 style="margin-top:12px;">Immeubles & copropriétés</h3>
-                    <ul class="list">
-                        <li>Syndics, gestionnaires immobiliers, propriétaires</li>
-                        <li>Entretien des parties communes et extérieurs proches</li>
-                        <li>Interventions ponctuelles en cas de besoin</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Promoteurs & entrepreneurs</h3>
-                    <ul class="list">
-                        <li>Fin de chantier logements, bureaux, commerces</li>
-                        <li>Nettoyage avant réception ou remise des clés</li>
-                        <li>Organisation flexible selon l’avancement des travaux</li>
-                    </ul>
-
-                    <h3 style="margin-top:12px;">Commerces & autres locaux</h3>
-                    <ul class="list">
-                        <li>Magasins, petits showrooms, bureaux en rez-de-chaussée</li>
-                        <li>Nettoyage avant ouverture ou après fermeture</li>
-                        <li>Prestation unique ou récurrente selon vos besoins</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- POURQUOI NOUS -->
-    <section id="pourquoi">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Pourquoi choisir B-Pro Service ?</h2>
-                <p class="section-subtitle">
-                    Un interlocuteur unique, un suivi sérieux et un nettoyage soigné
-                    pour que vous puissiez vous concentrer sur votre activité.
-                </p>
-            </div>
-
-            <div class="pill-row">
-                <div class="pill">Entreprise à taille humaine</div>
-                <div class="pill">Contact direct avec le fondateur</div>
-                <div class="pill">Devis clairs et transparents</div>
-                <div class="pill">Respect des locaux et du voisinage</div>
-                <div class="pill">Horaires flexibles</div>
-                <div class="pill">Travail soigné</div>
-            </div>
-
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Prise de contact</h3>
-                    <p>Vous expliquez vos besoins (type de locaux, surface, fréquence souhaitée).</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Visite si nécessaire</h3>
-                    <p>Une visite des lieux permet d’évaluer précisément le travail à réaliser.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Devis sur mesure</h3>
-                    <p>Vous recevez un devis adapté à votre situation, sans surprise.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Prestation & suivi</h3>
-                    <p>Les interventions sont réalisées comme convenu, avec possibilité d’ajustement.</p>
-                </div>
-            </div>
-
-            <div class="testimonials">
-                <div class="testimonial">
-                    « Locaux toujours propres, communication simple et directe.
-                    Très pratique pour notre petite structure. »
-                    <strong>Client PME – Bruxelles (témoignage type)</strong>
-                </div>
-                <div class="testimonial">
-                    « Fin de chantier nettoyée dans les délais, livraison impeccable
-                    pour le client final. »
-                    <strong>Entrepreneur rénovation – Région Bruxelles (témoignage type)</strong>
-                </div>
-            </div>
-
-            <div class="faq">
-                <div class="section-header" style="margin-top:18px;">
-                    <h3 style="font-size:1.05rem;">Questions fréquentes</h3>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Intervenez-vous aussi chez les particuliers ?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        B-Pro Service est principalement orientée vers les bureaux,
-                        immeubles, syndics et chantiers. Pour certains nettoyages
-                        spécifiques chez les particuliers (fin de travaux, remise en
-                        état), une étude est possible au cas par cas.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Dans quelles communes intervenez-vous ?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        La société est basée à Schaerbeek et intervient en priorité
-                        à Bruxelles et dans les communes voisines. Pour des chantiers
-                        spécifiques, un déplacement un peu plus large est possible.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Pouvez-vous travailler tôt le matin ou en soirée ?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Oui, les horaires sont adaptés au maximum pour ne pas perturber
-                        votre activité : tôt le matin, en journée ou en soirée selon
-                        les disponibilités.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CONTACT -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -975,15 +581,11 @@
 
                     <!-- Formulaire connecté à Formspree -->
                     <form id="contact-form" action="https://formspree.io/f/xykkkbjv" method="POST">
-                        <!-- Anti-spam -->
                         <input type="text" name="_gotcha" style="display:none">
-
-                        <!-- Sujet de l’e-mail -->
                         <input type="hidden" name="_subject" value="Nouvelle demande de devis – B-Pro Service">
 
-                        <!-- REDIRECTION après envoi (À ADAPTER AVEC TON URL DE SITE) -->
-                        <!-- Remplace VOTRE-URL-DE-SITE par l'adresse complète de ton site en ligne -->
-                        <input type="hidden" name="_next" value="https://bproservice.github.io/Bproservice.github.io/#merci">
+                        <!-- ✅ URL CORRIGÉE (c'était la source du bug) -->
+                        <input type="hidden" name="_next" value="https://bproservice.github.io/#merci">
 
                         <div>
                             <label for="nom">Nom / Société</label>
@@ -1010,9 +612,7 @@
                             <textarea id="message" name="message" placeholder="Surface approximative, fréquence souhaitée, contraintes horaires…" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">
-                            Envoyer ma demande
-                        </button>
+                        <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
 
                         <p style="font-size:0.8rem; color:#666; margin-top:6px;">
                             Après l’envoi, vous recevrez une confirmation sur cette page.
@@ -1035,21 +635,11 @@
     // Année automatique
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // FAQ interactive
-    document.querySelectorAll('.faq-item').forEach(function(item) {
-        item.addEventListener('click', function() {
-            item.classList.toggle('open');
-            const toggle = item.querySelector('.faq-toggle');
-            if (item.classList.contains('open')) {
-                toggle.textContent = '−';
-            } else {
-                toggle.textContent = '+';
-            }
-        });
-    });
+    // Affichage du message "Merci" après redirection
+    const hash = window.location.hash;
+    const params = new URLSearchParams(window.location.search);
 
-    // Affichage du message "Merci" après redirection (#merci dans l'URL)
-    if (window.location.hash === "#merci") {
+    if (hash === "#merci" || params.get("success") === "1") {
         const merci = document.getElementById("merci");
         if (merci) {
             merci.style.display = "block";
