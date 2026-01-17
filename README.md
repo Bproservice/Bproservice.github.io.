@@ -952,6 +952,8 @@
     <!-- Sujet de l’e-mail -->
     <input type="hidden" name="_subject" value="Nouvelle demande de devis – B-Pro Service">
 
+     <input type="hidden" name="_next" value="#merci">
+
     <div>
         <label for="nom">Nom / Société</label>
         <input type="text" id="nom" name="nom" placeholder="Votre nom ou celui de la société" required>
@@ -989,6 +991,14 @@
         Après l’envoi, vous recevrez un e-mail de confirmation.
     </p>
 </form>
+
+<div id="merci" style="margin-top:14px; padding:12px; border:1px solid #dde1ea; border-radius:12px; background:#ffffff;">
+  <strong style="color:#2f9e44;">✅ Merci !</strong>
+  <div style="color:#666; margin-top:6px;">
+    Votre demande de devis a bien été envoyée.<br>
+    Nous vous recontactons dans les plus brefs délais.
+  </div>
+</div>
                     <p style="font-size:0.8rem; color:var(--text-muted); margin-top:6px;">
                         (Formulaire en mode démonstration – pour un envoi automatique vers votre e-mail,
                         une configuration supplémentaire sera nécessaire.)
