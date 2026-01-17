@@ -1012,13 +1012,14 @@
     </p>
 </form>
 
-<div id="merci" style="margin-top:14px; padding:12px; border:1px solid #dde1ea; border-radius:12px; background:#ffffff;">
+<div id="merci" style="display:none; margin-bottom:14px; padding:12px; border:1px solid #dde1ea; border-radius:12px; background:#ffffff;">
   <strong style="color:#2f9e44;">✅ Merci !</strong>
   <div style="color:#666; margin-top:6px;">
     Votre demande de devis a bien été envoyée.<br>
     Nous vous recontactons dans les plus brefs délais.
   </div>
 </div>
+
                     <p style="font-size:0.8rem; color:var(--text-muted); margin-top:6px;">
                     </p>
                 </div>
