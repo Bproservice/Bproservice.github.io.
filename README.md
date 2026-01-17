@@ -1000,8 +1000,6 @@
   </div>
 </div>
                     <p style="font-size:0.8rem; color:var(--text-muted); margin-top:6px;">
-                        (Formulaire en mode démonstration – pour un envoi automatique vers votre e-mail,
-                        une configuration supplémentaire sera nécessaire.)
                     </p>
                 </div>
             </div>
