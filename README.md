@@ -944,7 +944,7 @@
 
                 <div>
                     <!-- Formulaire simple (à connecter plus tard si tu veux l’envoyer vers ton mail via un script) -->
-                    <form action="https://formspree.io/f/xykkkbjv" method="POST">
+                    <form action="https://formspree.io/f/xykkkbjv" method="POST" onsubmit="showConfirmation()">
 
     <!-- Anti-spam -->
     <input type="text" name="_gotcha" style="display:none">
@@ -980,6 +980,10 @@
     <button type="submit" class="btn btn-primary">
         Envoyer ma demande
     </button>
+    <p id="confirmation-message" style="display:none; margin-top:10px; font-size:0.9rem; color:green;">
+    ✅ Merci ! Votre demande de devis a bien été envoyée.
+    Nous vous recontactons dans les plus brefs délais.
+</p>
 
     <p style="font-size:0.8rem; color:#666; margin-top:6px;">
         Après l’envoi, vous recevrez un e-mail de confirmation.
@@ -1018,6 +1022,12 @@
             }
         });
     });
+<script>
+function showConfirmation() {
+    setTimeout(function () {
+        document.getElementById("confirmation-message").style.display = "block";
+    }, 500);
+}
 </script>
 
 </body>
